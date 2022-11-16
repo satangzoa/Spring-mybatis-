@@ -69,7 +69,7 @@ public class ContentDao implements IDao{
 	public void deleteDao( final String bId) {
 			System.out.println("deleteDao()");
 			
-			String query = "delete * from board where mid =?" ;
+			String query = "delete from board where mid =?" ;
 			this.template.update(query, new PreparedStatementSetter() {
 				
 				@Override

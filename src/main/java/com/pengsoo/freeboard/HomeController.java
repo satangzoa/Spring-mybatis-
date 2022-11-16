@@ -75,7 +75,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "delete")
 	public String delete(HttpServletRequest request, Model model) {
-		dao.deleteDao(request.getParameter("mid"));
+		dao.deleteDao(request.getParameter("mId"));
 		return "redirect:list";
 		}
 	
